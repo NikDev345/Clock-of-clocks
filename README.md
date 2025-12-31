@@ -1,18 +1,86 @@
-# React + Vite
+**⏱️ Clock Made of Clocks — React Edition**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A visually striking digital clock built entirely from analog clocks, implemented using React with smooth animations, precise time synchronization, and an elegant Light / Dark theme system.
 
-Currently, two official plugins are available:
+This project explores creative UI engineering, combining geometry, motion, and state-driven rendering to produce a clock that feels both technical and artistic.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**✨ Features**
 
-## React Compiler
+🕒 Clock made of clocks — each digit is constructed from multiple animated analog clocks
+⚛️ Pure React architecture (Vite-based setup)
+🎨 Light & Dark themes with smooth transitions
+🌌 Neon glow effect in Dark Mode for high contrast and readability
+🎬 Full-screen cinematic theme transition
+⏱️ Perfect second-level synchronization (no drift)
+📱 Responsive design — adapts across screen sizes
+🚀 Zero external UI libraries — everything built from scratch
+🌗 Theme Preview
+☀️ Light Mode
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
 
-Note: This will impact Vite dev & build performances.
+![Light Mode Preview](./light.png)
+🌙 Dark Mode (Neon)
+![Dark Mode Preview](./dark.png)
 
-## Expanding the ESLint configuration
+🧠 How It Works
+The current time (HH:MM:SS) is split into digits.
+Each digit maps to a predefined clock-hand orientation grid.
+Every small clock is an independent component driven by CSS variables.
+Angle normalization ensures smooth clockwise motion without jumps.
+Dark mode switches clock faces to black, allowing the neon hands and glow to stand out clearly.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This ensures:
+No backward rotation
+No flickering
+Clean, readable digits even in dark environments
+
+🛠️ Tech Stack
+React (Functional Components + Hooks)
+Vite (Fast development & build)
+CSS Variables for dynamic theming
+Modern CSS animations (clip-path, transitions)
+JavaScript Date API
+
+📁 Project Structure
+src/
+├── App.jsx        # Main application logic & theming
+├── Clock.jsx      # Individual clock component
+├── digits.js      # Digit-to-clock mapping
+├── style.css      # Full styling (light/dark themes)
+├── main.jsx       # React entry point
+
+▶️ Running Locally
+# install dependencies
+npm install
+
+# start development server
+npm run dev
+
+
+Then open:
+http://localhost:5173
+
+**🎯 Design Philosophy**
+This project focuses on:
+
+Clarity over clutter
+High contrast for accessibility
+Motion with purpose
+No unnecessary abstractions
+Every visual decision — especially in Dark Mode — follows real neon UI design principles.
+🚧 Possible Enhancements
+🌈 RGB / color-selectable neon modes
+💾 Persist theme preference with localStorage
+✨ Pulse glow synced with seconds
+🌌 Animated cyberpunk background
+📦 Package as a reusable React component
+
+📜 License
+
+This project is open-source and free to use for learning, experimentation, and inspiration.
+
+👤 Author
+
+Nagraj (Nikhil) Rangarej
+B.Tech — Artificial Intelligence & Data Science
+Exploring creative systems, UI engineering, and future-focused software design.
