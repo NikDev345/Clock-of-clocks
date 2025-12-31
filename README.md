@@ -41,14 +41,6 @@ CSS Variables for dynamic theming
 Modern CSS animations (clip-path, transitions)
 JavaScript Date API
 
-📁 Project Structure
-src/
-├── App.jsx        # Main application logic & theming
-├── Clock.jsx      # Individual clock component
-├── digits.js      # Digit-to-clock mapping
-├── style.css      # Full styling (light/dark themes)
-├── main.jsx       # React entry point
-
 ▶️ Running Locally
 # install dependencies
 npm install
