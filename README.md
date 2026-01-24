@@ -70,7 +70,8 @@ Every visual decision — especially in Dark Mode — follows real neon UI desig
 📜 License
 
 This project is open-source and free to use for learning, experimentation, and inspiration.
-
+will update this repo soon 
+stay tuned
 👤 Author
 
 Nagraj (Nikhil) Rangarej
